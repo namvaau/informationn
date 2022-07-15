@@ -1,0 +1,87 @@
+:root{
+    --bg1 :#046c4e;
+    --bg2 :#31c48d;
+    --bg:#def7ec;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: #def7ec;
+}
+.container{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(var(--bg1),var(--bg2));
+}
+.container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #def7ec;
+    margin: 20px auto;
+    cursor: pointer;
+    position: relative;
+    transition: 0.6s;
+}
+.container img:hover{
+    width: 340px;
+    height: 440px;
+    margin: 0;
+    border: 5px solid #def7ec;
+    border-radius: 10px;
+}
+.container h2{
+    color: #ffff;
+}
+.container p{
+    color: #ffff;
+    margin: 0 30px 12px;
+
+}
+.btn-container{
+display: flex;
+justify-content: space-between;
+margin: 0 30px 12px;
+}
+.btn-container button{
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    columns: #333333;
+    cursor: pointer;
+    margin: 15px 0 0 70px;
+    transition: 0.3s;
+}
+.btn-container button:hover{
+    background: #def7ec;
+    transform: scale(0.95);
+}
+.icon-social{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.icon-social i{
+    padding: 12px;
+    color: var(--bg);
+    border-radius: 50%;
+    margin: 5px 0 0 5px;
+    background: var(--bg2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icon-social i:hover{
+    color: #046c4e;
+    transform: scale(0.95);
+}
